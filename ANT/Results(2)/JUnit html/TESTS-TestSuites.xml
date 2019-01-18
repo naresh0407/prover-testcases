@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite failures="1" hostname="HDC3-L-HCDRQQ2" id="0" name="Adope_Demo/tests" package="" skipped="0" tests="1" time="89.996" timestamp="Mon Jan 07 10:14:37 IST 2019">
+	    <properties>
+		      <property name="excludeCallableTestCases" value="false" />
+
+		      <property name="testEnvironment" value="" />
+
+		      <property name="pluginOutputLevel" value="WARNING" />
+
+		      <property name="projectPath" value="C:/Users/bandapally.naresh/windows/prover-testcases" />
+
+		      <property name="salesforceMetadataCache" value="Reuse" />
+
+		      <property name="resultsPathDisposition" value="Increment" />
+
+		      <property name="testOutputLevel" value="WARNING" />
+
+		      <property name="webBrowserType" value="Google Chrome" />
+
+		      <property name="resultsPath" value="C:/Users/bandapally.naresh/windows/prover-testcases/ANT/Results" />
+
+		      <property name="webBrowserConfiguration" value="Full Screen" />
+
+		      <property name="projectCachePath" value="C:\Users\bandapally.naresh\windows\prover-testcases\ANT\..\..\.provarCaches" />
+
+	    </properties>
+
+	    <testcase classname="tests/TestCase1.testcase" name="TestCase1.testcase" time="89.937">
+		      <failure message="Execution failed"><![CDATA[Failed to create WebDriver.  Cause: [NullPointerException
+Stack Trace:
+java.lang.NullPointerException
+	at java.io.File.<init>(File.java:277)
+	at com.provar.plugins.forcedotcom.core.desktop.LocalRuntimeBrowserConfigurationServiceSupport.findExecutable(LocalRuntimeBrowserConfigurationServiceSupport.java:45)
+	at com.provar.plugins.forcedotcom.core.desktop.LocalChromeRuntimeBrowserConfigurationService.create(LocalChromeRuntimeBrowserConfigurationService.java:112)
+	at com.provar.core.testapi.ProvarSeleniumDriver.<init>(ProvarSeleniumDriver.java:464)
+	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.performConnect(SfUiHandler.java:236)
+	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.performScreenOpen(SfUiHandler.java:295)
+	at com.provar.plugins.forcedotcom.core.ui.SeleniumUiHandler.perform(SeleniumUiHandler.java:362)
+	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.delegateToUiHandler(SfConnectionHandler.java:357)
+	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.perform(SfConnectionHandler.java:346)
+	at com.provar.core.testexecution.common.java.TestExecutionContextImpl.doConnectionOperation(TestExecutionContextImpl.java:812)
+	at com.provar.plugins.forcedotcom.core.ui.UiWithScreen.execute(UiWithScreen.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.provar.core.testexecution.container.java.TestExecutionContainerImpl.invokeTestApi(TestExecutionContainerImpl.java:644)
+	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.doInvokeTestApi(LocalTestExecutionContainerRunner.java:612)
+	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.access$9(LocalTestExecutionContainerRunner.java:558)
+	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner$MessageProcessor.run(LocalTestExecutionContainerRunner.java:1155)
+]]]></failure>
+
+	    </testcase>
+
+  </testsuite>
+</testsuites>

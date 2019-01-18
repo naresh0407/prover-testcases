@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite failures="0" hostname="HDC3-L-9Z23VP2" id="0" name="Adope_Demo/tests" package="" skipped="0" tests="0" time="1.54720896E9" timestamp="Thu Jan 01 05:30:00 IST 1970">
+	    <properties>
+		      <property name="excludeCallableTestCases" value="false" />
+
+		      <property name="testEnvironment" value="" />
+
+		      <property name="pluginOutputLevel" value="WARNING" />
+
+		      <property name="projectPath" value="C:/Users/reena.barnwal/Provar/prover-testcases" />
+
+		      <property name="salesforceMetadataCache" value="Reuse" />
+
+		      <property name="resultsPathDisposition" value="Increment" />
+
+		      <property name="testOutputLevel" value="WARNING" />
+
+		      <property name="webBrowserType" value="Google Chrome" />
+
+		      <property name="resultsPath" value="C:/Users/reena.barnwal/Provar/prover-testcases/ANT/Results" />
+
+		      <property name="webBrowserConfiguration" value="Full Screen" />
+
+		      <property name="projectCachePath" value="C:\Users\reena.barnwal\Provar\prover-testcases\ANT\..\..\.provarCaches" />
+
+	    </properties>
+
+  </testsuite>
+</testsuites>

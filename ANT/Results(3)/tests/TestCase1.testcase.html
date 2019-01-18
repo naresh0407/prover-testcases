@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<style>
+
+			body {
+				font-family: sans-serif;
+			}
+
+			.TestCaseImplTitle {
+				color: blue;
+				font: 0.85em arial;
+				font-weight: bold;
+			}
+
+			.TestCaseImpl .TestItemTitle {
+				color: blue;
+				border-top: 2px solid blue;
+				border-bottom: 2px solid blue;
+				margin-bottom: 0.5em;
+			}
+
+			.TestCaseImpl .TestItemOutcome {
+				border-top: 2px solid blue;
+				border-bottom: 2px solid blue;
+			}
+
+			.ApiCallImpl .TestItemTitle{
+				color: blue;
+				border-top: 1px solid blue;
+				border-bottom: 1px solid blue;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				margin-top: 0.25em;
+				margin-bottom: 0.25em;
+			}
+
+			.ApiCallImpl .TestItemOutcome {
+				border-top: 1px solid blue;
+				border-bottom: 1px solid blue;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				margin-top: 0.25em;
+			}
+
+			.TestItemOutcome {
+				padding-left: 20px;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				clear: both;
+			}
+			
+			.TestItemOutcome.Successful {
+				color: green;
+				background: url('../successful_16x16.gif') no-repeat 0 0.15em;
+			}
+
+			.TestItemOutcome.Failed {
+				color: red;
+				background: url('../failed_16x16.gif') no-repeat 0 0.15em;
+				font-weight: bold;
+			}
+
+			.TestItemOutcome.Skipped {
+				color: orange;
+				background: url('../skipped_16x16.gif') no-repeat 0 0.15em;
+			}
+
+			.TestOutput {
+				font: 0.9em arial;
+				color: black;
+				margin-top: 0.15em;
+				margin-bottom: 0.15em;
+			}
+
+			.TestOutput.err {
+				font-weight: bold;
+				color: red;
+			}
+
+			.TestOutput.war {
+				font-weight: bold;
+				color: orange;
+			}
+
+			.ApiCallImpl{
+				margin-left: 1em;
+				margin-bottom: 0.4em;
+			}
+
+			.TestCaseCallImpl{
+				margin-left: 1em;
+				margin-bottom: 0.4em;
+			}
+			
+		</style>
+	</head>
+	<body><div id='detail-body'>
+	<div style='float: right;'><img src='..//provar_logo_400x100.png' height='50'/></div>
+<h2><img src='..//testcase_16x16.png' style='height: 24; padding-top: 4px;'/> TestCase1.testcase</h2>
+<div class='TestCaseImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>10:28:30 (00:00.000)</span></div>Start of Test Case TestCase1.testcase</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>10:28:30 (00:00.023)</span></div>Start of Test Step Salesforce Connect: Adope_Sandbox (Test)</div><div class='TestOutput inf'>Opening Salesforce connection  Connection name: Adope_Sandbox</div><div class='TestOutput inf'>Connection details.  Connection name: Adope_Sandbox, urlString: sf:user=naresh.bandapally@accenture.com;password={password};environment=PROD_DEV;lightningMode=true, environment: &lt;default&gt;, userName: naresh.bandapally@accenture.com, password: [supplied], securityToken: [empty]</div><div class='TestOutput inf'>Created Object ID log file.  Path: C:\Users\bandapally.naresh\windows\prover-testcases\ANT\Results(3)\Artifacts\Adope_Sandbox-objectids.log</div><div class='TestOutput war'>Error making GET request. Cause: [SocketTimeoutException: connect timed out]</div><div class='TestOutput inf'>Getting user info: Getting Salesforce user information ... 0%</div><div class='TestOutput war'>Failed to Send Exception calling Partner Connection method - retrying.  Method: query, retryCounter: 1, cause: [ConnectionException: Failed to send request to https://nareshbandapally-dev-ed.my.salesforce.com/services/Soap/u/42.0/00D7F000001xm8E, ConnectException: Connection timed out: connect]</div><div class='TestOutput war'>Partner Connection retry was successful.  Method: query</div><div class='TestOutput off'>Getting user info: Getting Salesforce user information ... 100%</div><div class='TestOutput off'>Getting user info ... 100%</div><div class='TestOutput off'>Getting user info ... done</div><div class='TestOutput off'>Salesforce connection opened successfully.  Connection name: Adope_Sandbox, ResultName: Adope_Sandbox, resultScope: Test</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>10:29:13 (00:42.958)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>10:29:13 (00:42.958)</span></div>Start of Test Step Set Values: AccountName</div><div class='TestOutput inf'>Setting value AccountName, value: Test Script-WINQ</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>10:29:13 (00:42.998)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>10:29:13 (00:42.999)</span></div>Start of Test Step On SF Account All Accounts list view</div><div class='TestOutput inf'>Start of With Screen.  Connection Name: Adope_Sandbox, target: sf:ui:target?object=Account&action=List&listView=AllAccounts</div><div class='TestOutput inf'>Encoding Username: naresh.bandapally@accenture.com</div><div class='TestOutput war'>Failed to connect to Master Lock Manager - assuming dead.  Host: localhost, port: 49339, cause: Connection refused: no further information</div><div class='TestOutput inf'>Loading Connection model ... 100%</div><div class='TestOutput off'>Loading Connection model ... 100%</div><div class='TestOutput off'>Loading Connection model: Loading the Sales application from disk ... 100%</div><div class='TestOutput off'>Loading Connection model: Loading the Sales application from disk ... 100%</div><div class='TestOutput off'>Loading Connection model ... 100%</div><div class='TestOutput off'>Loading Connection model ... 100%</div><div class='TestOutput off'>Loading Connection model ... done</div><div class='TestOutput sev'>Failed to create WebDriver.  Cause: [NullPointerException&lt;br/&gt;Stack Trace:&lt;br/&gt;java.lang.NullPointerException&lt;br/&gt;	at java.io.File.&lt;init&gt;(File.java:277)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.desktop.LocalRuntimeBrowserConfigurationServiceSupport.findExecutable(LocalRuntimeBrowserConfigurationServiceSupport.java:45)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.desktop.LocalChromeRuntimeBrowserConfigurationService.create(LocalChromeRuntimeBrowserConfigurationService.java:112)&lt;br/&gt;	at com.provar.core.testapi.ProvarSeleniumDriver.&lt;init&gt;(ProvarSeleniumDriver.java:464)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.performConnect(SfUiHandler.java:236)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.performScreenOpen(SfUiHandler.java:295)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SeleniumUiHandler.perform(SeleniumUiHandler.java:362)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.delegateToUiHandler(SfConnectionHandler.java:357)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.perform(SfConnectionHandler.java:346)&lt;br/&gt;	at com.provar.core.testexecution.common.java.TestExecutionContextImpl.doConnectionOperation(TestExecutionContextImpl.java:812)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.UiWithScreen.execute(UiWithScreen.java:261)&lt;br/&gt;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&lt;br/&gt;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&lt;br/&gt;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&lt;br/&gt;	at java.lang.reflect.Method.invoke(Method.java:498)&lt;br/&gt;	at com.provar.core.testexecution.container.java.TestExecutionContainerImpl.invokeTestApi(TestExecutionContainerImpl.java:644)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.doInvokeTestApi(LocalTestExecutionContainerRunner.java:612)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.access$9(LocalTestExecutionContainerRunner.java:558)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner$MessageProcessor.run(LocalTestExecutionContainerRunner.java:1155)&lt;br/&gt;]</div><div class='TestOutput sev'>Error opening Salesforce UI Connection.  Connection Name: Adope_Sandbox, cause: [NullPointerException&lt;br/&gt;Stack Trace:&lt;br/&gt;java.lang.NullPointerException&lt;br/&gt;	at com.provar.core.testapi.ProvarSeleniumDriver.getCurrentUrl(ProvarSeleniumDriver.java:2602)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.constructPageUrl(SfUiHandler.java:1899)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.performScreenOpenObject(SfUiHandler.java:1435)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.performScreenOpen(SfUiHandler.java:403)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SeleniumUiHandler.perform(SeleniumUiHandler.java:362)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.delegateToUiHandler(SfConnectionHandler.java:357)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.perform(SfConnectionHandler.java:346)&lt;br/&gt;	at com.provar.core.testexecution.common.java.TestExecutionContextImpl.doConnectionOperation(TestExecutionContextImpl.java:812)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.UiWithScreen.execute(UiWithScreen.java:261)&lt;br/&gt;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&lt;br/&gt;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&lt;br/&gt;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&lt;br/&gt;	at java.lang.reflect.Method.invoke(Method.java:498)&lt;br/&gt;	at com.provar.core.testexecution.container.java.TestExecutionContainerImpl.invokeTestApi(TestExecutionContainerImpl.java:644)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.doInvokeTestApi(LocalTestExecutionContainerRunner.java:612)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.access$9(LocalTestExecutionContainerRunner.java:558)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner$MessageProcessor.run(LocalTestExecutionContainerRunner.java:1155)&lt;br/&gt;]</div><div class='TestOutput fin'>Focused window closed </div><div class='TestOutput sev'>[NullPointerException&lt;br/&gt;Stack Trace:&lt;br/&gt;java.lang.NullPointerException&lt;br/&gt;	at com.provar.core.testapi.ProvarSeleniumDriver.updateWindowHandles(ProvarSeleniumDriver.java:293)&lt;br/&gt;	at com.provar.core.testapi.ProvarSeleniumDriver.updateWindowHandles(ProvarSeleniumDriver.java:254)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SeleniumUiHandler.captureScreenshotUsingDriver(SeleniumUiHandler.java:4966)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SeleniumUiHandler.captureScreenshotAsPng(SeleniumUiHandler.java:4951)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SeleniumUiHandler.takeScreenshot(SeleniumUiHandler.java:4875)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SfUiHandler.performScreenOpen(SfUiHandler.java:411)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.SeleniumUiHandler.perform(SeleniumUiHandler.java:362)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.delegateToUiHandler(SfConnectionHandler.java:357)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.connection.SfConnectionHandler.perform(SfConnectionHandler.java:346)&lt;br/&gt;	at com.provar.core.testexecution.common.java.TestExecutionContextImpl.doConnectionOperation(TestExecutionContextImpl.java:812)&lt;br/&gt;	at com.provar.plugins.forcedotcom.core.ui.UiWithScreen.execute(UiWithScreen.java:261)&lt;br/&gt;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&lt;br/&gt;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&lt;br/&gt;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&lt;br/&gt;	at java.lang.reflect.Method.invoke(Method.java:498)&lt;br/&gt;	at com.provar.core.testexecution.container.java.TestExecutionContainerImpl.invokeTestApi(TestExecutionContainerImpl.java:644)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.doInvokeTestApi(LocalTestExecutionContainerRunner.java:612)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner.access$9(LocalTestExecutionContainerRunner.java:558)&lt;br/&gt;	at com.provar.core.testexecution.container.java.LocalTestExecutionContainerRunner$MessageProcessor.run(LocalTestExecutionContainerRunner.java:1155)&lt;br/&gt;]</div><div class='TestOutput sev'>The required connection name isn't present.  This should come from the containing With Screen API.</div><div class='TestItemOutcome Failed'><div style='float: right; font-size: 0.8em;'><img src='..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>10:29:16 (00:45.516)</span></div>Test Step failed.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Account New screen SKIPPED</div></div><div class='TestItemOutcome Failed'><div style='float: right; font-size: 0.8em;'><img src='..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>10:29:16 (00:45.519)</span></div>Test Case failed.</div></div><div class='TestOutput inf'>Closing Salesforce Connection.  Name: Adope_Sandbox</div><div class='TestOutput inf'>Closing Salesforce Connection because it is no longer being used.  Name: Adope_Sandbox</div><div class='TestOutput inf'>Closing Web Connection.</div><div class='TestOutput inf'>Closing Selenium driver</div><div class='TestOutput inf'>WebDriver is null</div><div class='TestOutput inf'>WebDriver is null</div><div class='TestOutput inf'>Shutting down Soap Connections.  logFilePath: Adope_Sandbox-objectids.log</div><div class='TestOutput off'>Salesforce Connection closed successfully.  Name: Adope_Sandbox</div>
+	</div></body>
+</html>
